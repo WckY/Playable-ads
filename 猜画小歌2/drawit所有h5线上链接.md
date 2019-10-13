@@ -8,7 +8,7 @@
 
 3、https://static.zplay.cn/wap/ad_canPlay/drawIt/scratch_card/plat/drawIt_scratch_adwords_cn.html
 
-解析: 原生JS和原生canvas结合实现，##该h5获得项目奖金，单日下载量近2k。
+解析: 原生JS和原生canvas结合实现，**该h5获得项目奖金，单日下载量近2k**。
 
 4、https://static.zplay.cn/wap/ad_canPlay/drawIt/scratch_card_pro/plat/drawIt_scratch_pro_adwords_cn.html
 
