@@ -1,3 +1,5 @@
+![image](https://github.com/WckY/Responsive-h5-game-dictionary/blob/master/Hexa%20Drawn/icon.png)
+
 1、https://static.zplay.cn/wap/ad_canPlay/hexa/1/plat/hexa_normal_adwords_cn.html
 
 解析: 原生JS实现，难度在于for循环里的闭包函数内，无论点击哪个拼图，旋转多少次，多少角度，最终统一的判断条件都会成立，涉及到对角度求余。
