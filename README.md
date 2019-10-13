@@ -39,7 +39,7 @@
 
 # 5、部分王牌h5游戏线上链接
 
-Popstar
+** Popstar
 
 https://static.zplay.cn/wap/ad_canPlay/popstar/1/plat/popstar_appLovin_en.html （引擎为pixi.js，难点在于无限递归，我leader亲自写的第一版）
 
@@ -63,8 +63,10 @@ https://static.zplay.cn/wap/ad_canPlay/popstar/15-4/plat/ps_sf_15_4_adwords_cn.h
 
 https://static.zplay.cn/wap/ad_canPlay/popstar/16-2/plat/popstar_axc2_WSH_adwords_cn.html （同上）
 
+更多Popstar及详细解析，可直接点击: https://github.com/WckY/Responsive-h5-game-dictionary/tree/master/PaperPlanePlanet 。
 
-猜画小歌2（英文名《Draw it》）
+
+** 猜画小歌2（英文名《Draw it》）
 
 https://static.zplay.cn/wap/ad_canPlay/drawIt/1/plat/drawIt_1_sf_adwords_cn.html （难点在于如何用create.js绘制画板支持画画，以及不可能真的智能识别）
 
@@ -85,13 +87,13 @@ https://static.zplay.cn/wap/ad_canPlay/idleGrassCutter/11/plat/idleGrassCutter_b
 https://static.zplay.cn/wap/ad_canPlay/idleGrassCutter/9-1/plat/idleGrassCutter_bomb_adwords_en.html （引擎为create.js，难点飞镖的碰撞检测和改变方向）
 
 
-Will hero（18年爆款游戏）
+** Will hero（18年爆款游戏）
 
 https://static.zplay.cn/wap/ad_canPlay/willhero/6/plat/willhero_adwords_cn.html （原生JS实现，难点在于不同岩浆容器里的岩浆无限循环生成，下降速度、岩浆间隙等参数可配置，以及碰撞检测。最后是发生碰撞后禁止所有的岩浆坠落）
 
 https://static.zplay.cn/wap/ad_canPlay/willhero/4/plat/willhero_adwords_cn.html （原生JS实现，难点在于碰撞检测和动画）
 
-PaperPlanePlanet（纸飞机游戏）
+** PaperPlanePlanet（纸飞机游戏）
 
 https://static.zplay.cn/wap/ad_canPlay/paperPlane/10/plat/paperPlane_bomb_adwords_en.html （技术点在于贴图的方式实现伪3D，保证整体文件不超过1M的同时图片质量优秀。难点为运用到三角碰撞检测，因为飞机不是矩形，对碰撞检测的要求更高。为了提高游戏流畅度，使用requestAnimationFrame和window.cancelAnimationFrame）
 
@@ -102,7 +104,7 @@ https://static.zplay.cn/wap/ad_canPlay/paperPlane/13/plat/paperPlane_hit_adwords
 https://static.zplay.cn/wap/ad_canPlay/paperPlane/7/plat/paperPlane_game_adwords_en.html （同事所写，难度大家自行领会）
 
 
-Hexa Drawn（拼图类游戏）
+** Hexa Drawn（拼图类游戏）
 
 https://static.zplay.cn/wap/ad_canPlay/hexa/3/plat/hexa_cn_adwords_cn.html （原生JS实现，难度在于for循环里的闭包函数内，无论点击哪个拼图，旋转多少次，多少角度，最终统一的判断条件都会成立，涉及到对角度求余）
 
