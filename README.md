@@ -63,6 +63,7 @@ https://static.zplay.cn/wap/ad_canPlay/popstar/15-4/plat/ps_sf_15_4_adwords_cn.h
 
 https://static.zplay.cn/wap/ad_canPlay/popstar/16-2/plat/popstar_axc2_WSH_adwords_cn.html （同上）
 
+
 猜画小歌2（英文名《Draw it》）
 
 https://static.zplay.cn/wap/ad_canPlay/drawIt/1/plat/drawIt_1_sf_adwords_cn.html （难点在于如何用create.js绘制画板支持画画，以及不可能真的智能识别）
@@ -83,6 +84,7 @@ https://static.zplay.cn/wap/ad_canPlay/idleGrassCutter/11/plat/idleGrassCutter_b
 
 https://static.zplay.cn/wap/ad_canPlay/idleGrassCutter/9-1/plat/idleGrassCutter_bomb_adwords_en.html （引擎为create.js，难点飞镖的碰撞检测和改变方向）
 
+
 Will hero（18年爆款游戏）
 
 https://static.zplay.cn/wap/ad_canPlay/willhero/6/plat/willhero_adwords_cn.html （原生JS实现，难点在于不同岩浆容器里的岩浆无限循环生成，下降速度、岩浆间隙等参数可配置，以及碰撞检测。最后是发生碰撞后禁止所有的岩浆坠落）
@@ -99,6 +101,7 @@ https://static.zplay.cn/wap/ad_canPlay/paperPlane/13/plat/paperPlane_hit_adwords
 
 https://static.zplay.cn/wap/ad_canPlay/paperPlane/7/plat/paperPlane_game_adwords_en.html （同事所写，难度大家自行领会）
 
+
 Hexa Drawn（拼图类游戏）
 
 https://static.zplay.cn/wap/ad_canPlay/hexa/3/plat/hexa_cn_adwords_cn.html （原生JS实现，难度在于for循环里的闭包函数内，无论点击哪个拼图，旋转多少次，多少角度，最终统一的判断条件都会成立，涉及到对角度求余）
@@ -110,7 +113,7 @@ https://static.zplay.cn/wap/ad_canPlay/hexa/2/plat/hexa_screen_adwords_cn.html �
 # 6、如何实现h5游戏？
 可能大家对h5游戏制作固有思维用游戏引擎实现即可，尤其是大名鼎鼎的白鹭引擎。没错，白鹭引擎是个非常好的选择。但在我司最开始并没有采用相关的游戏引擎方案。鉴于国外不同平台相同的要求，h5全部文件最大不能超过1M，所以我leader要求禁止使用任何第三方库，包括jq。所有代码的编写，一律采取原生JS es5的写法，向下兼容更多的系统。除了原生JS，原生canvas也可以。这便是我小组前期实现h5游戏的方案。但随着游戏的复杂度逐渐提升，要求还原度也越来越高，游戏引擎方案就应运而生。为此，我leader决定使用create.js，一款很棒的轻量级游戏引擎，并将相关js放置CDN中，再在js中封装了create.js很多API，比如绘制图片的Bitmap、绘制文字的Text、雪碧图的渲染Sprite等，大功告成。h5游戏开发，正式进入原生JS、二次封装create.js、原生canvas三国鼎立新局面。
 
-虽然有了新方案的加盟，在之后的游戏开发中也确实大量使用create.js，但我们并没有摒弃原生JS和原生canvas。至于为什么使用create.js，虽然leader没说，但我在后来的工作中查阅相关资料，发现这篇文章介绍的很好，H5游戏开发：游戏引擎入门推荐 - undefined的文章 - 知乎 https://zhuanlan.zhihu.com/p/32392153，所以也推广给小组同事了，并做了总结。
+虽然有了新方案的加盟，在之后的游戏开发中也确实大量使用create.js，但我们并没有摒弃原生JS和原生canvas。至于为什么使用create.js，虽然leader没说，但我在后来的工作中查阅相关资料，发现这篇文章介绍的很好，H5游戏开发：游戏引擎入门推荐 - undefined的文章 - 知乎 https://zhuanlan.zhihu.com/p/32392153， 所以也推广给小组同事了，并做了总结。
 
 总之，create.js适合做动画类型的专题h5小游戏，像我司的引流h5小游戏最适合不过，egret、laya、cocos适合中大型游戏。而且不是每个游戏场景，必须得用create.js。归根结底，原生JS基础一定要好，能熟练使用原生JS实现任何需求。即使不好，也要在第一时间想到核心关键词谷歌到最合适的方案。
 
