@@ -1,3 +1,5 @@
+![image](https://github.com/WckY/Responsive-h5-game-dictionary/blob/master/Popstar%E6%B6%88%E7%81%AD%E6%98%9F%E6%98%9F/logo.png)
+
 1、https://static.zplay.cn/wap/ad_canPlay/popstar/1/plat/popstar_appLovin_en.html
 
 解析: 实现引擎为pixi.js，难点在于无限递归，我leader亲自写的第一版。
