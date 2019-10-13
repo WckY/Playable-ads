@@ -1,27 +1,27 @@
 # Responsive-h5-game-dictionary
 一个超级详细全面介绍响应式h5游戏的项目大全。技术栈为原生JS(es5) + create.js(二次封装) + 原生canvas
 
-**目录
+**目录**
 
-**1、看完能学到什么
+**1、看完能学到什么**
 
-**2、前言
+**2、前言**
 
-**3、简单的自我介绍 + 什么是h5游戏
+**3、简单的自我介绍 + 什么是h5游戏**
 
-**4、我负责了哪些h5游戏
+**4、我负责了哪些h5游戏**
 
-**5、部分王牌h5游戏线上链接
+**5、部分王牌h5游戏线上链接**
 
-**6、知识点简介
+**6、知识点简介**
 
-**7、如何实现h5游戏
+**7、如何实现h5游戏**
 
-**8、h5游戏开发规范
+**8、h5游戏开发规范**
 
-**9、创建该项目目的
+**9、创建该项目目的**
 
-# 1、看完能学到什么？
+# 1、看完能学到什么？**
 
 什么是h5游戏？我将解释清楚。实现h5游戏的过程中，需要注意哪些事项？我会分享我司前端游戏小组约定俗成的开发规范。h5游戏编程中，会涉及大量知识点、技术难点、解决方案，及时避坑。对提高业务能力有帮助吗？答案是肯定的，毫不夸张地说，有利于快速提高你的产品思维、设计美感，而不仅仅是撸码。
 
@@ -39,7 +39,7 @@
 
 # 5、部分王牌h5游戏线上链接
 
-** Popstar
+**Popstar**
 
 https://static.zplay.cn/wap/ad_canPlay/popstar/1/plat/popstar_appLovin_en.html （引擎为pixi.js，难点在于无限递归，我leader亲自写的第一版）
 
@@ -66,7 +66,7 @@ https://static.zplay.cn/wap/ad_canPlay/popstar/16-2/plat/popstar_axc2_WSH_adword
 更多Popstar及详细解析，可直接点击: https://github.com/WckY/Responsive-h5-game-dictionary/tree/master/PaperPlanePlanet 。
 
 
-** 猜画小歌2（英文名《Draw it》）
+**猜画小歌2（英文名《Draw it》）**
 
 https://static.zplay.cn/wap/ad_canPlay/drawIt/1/plat/drawIt_1_sf_adwords_cn.html （难点在于如何用create.js绘制画板支持画画，以及不可能真的智能识别）
 
@@ -76,7 +76,7 @@ https://static.zplay.cn/wap/ad_canPlay/drawIt/scratch_card/plat/drawIt_scratch_a
 
 https://static.zplay.cn/wap/ad_canPlay/drawIt/scratch_card_pro/plat/drawIt_scratch_pro_adwords_cn.html （创意来自上海垃圾分类回收）
 
-Idle Grass Cutter（割草休闲游戏）
+**Idle Grass Cutter（割草休闲游戏）**
 
 https://static.zplay.cn/wap/ad_canPlay/idleGrassCutter/4/plat/idleGrassCutter_cropper_adwords_en.html （引擎为create.js，该h5获得项目奖金，单日下载量近2k，难点在于上下左右的随时切换控制。初始化时使用发布订阅模式随机向下或向右行驶）
 
@@ -87,13 +87,13 @@ https://static.zplay.cn/wap/ad_canPlay/idleGrassCutter/11/plat/idleGrassCutter_b
 https://static.zplay.cn/wap/ad_canPlay/idleGrassCutter/9-1/plat/idleGrassCutter_bomb_adwords_en.html （引擎为create.js，难点飞镖的碰撞检测和改变方向）
 
 
-** Will hero（18年爆款游戏）
+**Will hero（18年爆款游戏）**
 
 https://static.zplay.cn/wap/ad_canPlay/willhero/6/plat/willhero_adwords_cn.html （原生JS实现，难点在于不同岩浆容器里的岩浆无限循环生成，下降速度、岩浆间隙等参数可配置，以及碰撞检测。最后是发生碰撞后禁止所有的岩浆坠落）
 
 https://static.zplay.cn/wap/ad_canPlay/willhero/4/plat/willhero_adwords_cn.html （原生JS实现，难点在于碰撞检测和动画）
 
-** PaperPlanePlanet（纸飞机游戏）
+**PaperPlanePlanet（纸飞机游戏）**
 
 https://static.zplay.cn/wap/ad_canPlay/paperPlane/10/plat/paperPlane_bomb_adwords_en.html （技术点在于贴图的方式实现伪3D，保证整体文件不超过1M的同时图片质量优秀。难点为运用到三角碰撞检测，因为飞机不是矩形，对碰撞检测的要求更高。为了提高游戏流畅度，使用requestAnimationFrame和window.cancelAnimationFrame）
 
@@ -104,7 +104,7 @@ https://static.zplay.cn/wap/ad_canPlay/paperPlane/13/plat/paperPlane_hit_adwords
 https://static.zplay.cn/wap/ad_canPlay/paperPlane/7/plat/paperPlane_game_adwords_en.html （同事所写，难度大家自行领会）
 
 
-** Hexa Drawn（拼图类游戏）
+**Hexa Drawn（拼图类游戏）**
 
 https://static.zplay.cn/wap/ad_canPlay/hexa/3/plat/hexa_cn_adwords_cn.html （原生JS实现，难度在于for循环里的闭包函数内，无论点击哪个拼图，旋转多少次，多少角度，最终统一的判断条件都会成立，涉及到对角度求余）
 
