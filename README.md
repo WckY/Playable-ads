@@ -25,6 +25,7 @@
 在介绍具体如何实现h5游戏前，我想先和大家分享下我目前负责了哪些游戏。从数量上计算总共有11款App，每款App里有若干玩法、不同版本的h5，少则2款，多则像我司的王牌游戏——Popstar消灭星星，30+个创意，而且在持续增加。从游戏大种类上区分，分别是消除类游戏《Popstar消灭星星》、竞技绘画游戏《猜画小歌2》(英文名字《Draw It》)、割草休闲游戏《Idle Grass Cutter》、闯关冒险游戏《Will hero》(中文名《王牌大作战》)、纸飞机游戏《PaperPlanePlanet》、电音类游戏《球球你跳一跳》、拼图类游戏《Hexa Drawn》、解压破坏类游戏《Idle Press》、涂鸦休闲游戏《Kolor It》、舞蹈类游戏《madForDance》、球类休闲游戏《我要打篮球》(英文名《Dunk Trickster》)。我也将在之后的篇幅及github中，为大家分享我同事实现的更有趣、更有难度的h5游戏。而之所以先告诉各位游戏的种类，目的就是不想浪费大家的时间，希望能方便你们自行搜索、阅览、尝试、编程。甚至在以后的工作当中如果能借鉴到我今天的分享，我的工作就没白费。那么在大种类里还细分了更多的尝试，比如分屏玩法，程序的自动开始和玩家的手动操作竞技，这样趣味性是不是更足呢，期待大家的反馈。
 
 5、部分王牌h5游戏线上链接
+
 Popstar
 https://static.zplay.cn/wap/ad_canPlay/popstar/1/plat/popstar_appLovin_en.html（引擎为pixi.js，难点在于无限递归，我leader亲自写的第一版）
 
@@ -96,76 +97,59 @@ https://static.zplay.cn/wap/ad_canPlay/hexa/2/plat/hexa_screen_adwords_cn.html�
 
 7、知识点简介
 A：obj.style.width、obj.offsetWidth、getComputedStyle(obj).width、obj.currentWidth具体区别？
+
 obj.style.width只能操作行内样式，只包括内容区不包括border和padding。返回值带单位，数据类型为string。
+
 obj.offsetWidth包括border和padding。返回值不带单位，数据类型为number。
+
 getComputedStyle(obj).width可获取外链、样式表中的样式，不包括border和padding。返回值带单位，数据类型为string。只能适用于非IE浏览器中。
+
 obj.currentWidth可获取外链、样式表中的样式，不包括border和padding。返回值带单位，数据类型为string。只能适用于IE浏览器中。
 
 B：getClientRects和getBoundingClientRect区别？
+
 getClientRects获取元素占据页面的所有矩形区域，返回TextRectangleList对象，包含top、left、bottom、right width、height六个属性;
 getBoundingClientRect返回TextRectangle对象，即使DOM里没有文本也能返回TextRectangle对象。用于获取元素位置，获得页面中某个元素的左，上，右和下分别相对浏览器视窗的位置。
 
 C：移动端横竖屏兼容原理？如何无缝切换横竖屏？判断横屏？
+
 根据宽高比判断，但前提得通过document.documentElement.clientWidth || window.innerWidth和document.documentElement.clientHeight || window.innerHeight获取准确的宽高。然后在初始化时使用horizontal和vertical判断，最后document.querySelector("html").style.fontSize = xxx + 'px'即可实现移动端的适配。
 
 D：碰撞检测大概原理？三角碰撞原理又是怎么回事？
+
 核心：每个物体大概是一个矩形，而每个矩形有四个点，每个点有x，y两个坐标共计8个坐标，获取到A矩形的offsetWidth、offsetHeight，再通过getBoundingClientRect获取到top、left等值，同理可获取B矩形的这些值，然后通过判断两个矩形的重合区间，即可实现碰撞检测。
 三角检测是在常规碰撞检测的基础上强化了判断范围，比如对飞机和导弹进行碰撞检测，就需要用到该判断。具体资料介绍：https://www.cnblogs.com/anningwang/p/7581545.html。
 
 E：A*寻路算法
+
 具体资料介绍：https://www.cnblogs.com/hapjin/p/5705319.html。
 
 F：发布订阅模式
+
 var e = document.createEvent("HTMLEvents");
+
 e.initEvent("click", true, true);
+
 obj.dispatchEvent(e);
 
-G：移动过程中如何准确监听用户手指到底经过哪些区域? 
+G：移动过程中如何准确监听用户手指到底经过哪些区域?
+
 核心：e.changedTouches和document.elementFromPoint。
 
 H：原生JS如何判断用户点击的区域不是指定的标签？
+
 e.target.tagName.toLowerCase() !== "xxx"。
 
 I： 如何使用原生canvas实现手动及自动刮刮卡功能
+
 核心：fillRect、globalCompositeOperation、clearRect，配合上css3动画。
 
 J：原生JS如何实现extend函数？
-map.extend = function () {
-	var length = arguments.length;
-	var target = arguments[0] || {};
-	if (typeof target!="object" && typeof target != "function") {
-	     target = {};
-	};
-	if (length == 1) {
-	     target = this;
-	     i--;
-	};
-	for (var i = 1; i < length; i++) { 
-	     var source = arguments[i]; 
-	     for (var key in source) {
-	           if (Object.prototype.hasOwnProperty.call(source, key)) { 
-	               target[key] = source[key]; 
-	           } 
-	     }; 
-	};
-	return target; 
-};
 
+自行百度代码
 K：throttle函数的实现？
-window.utils = window.utils || {};
-window.utils.throttle = function (fn, gapTime) {
-        if (gapTime == null || gapTime == undefined) {
-            gapTime = 1600;
-        };
-        var lastTime = null;
-        return function () {
-            var nowTime = +new Date();
-            if (nowTime - lastTime > gapTime || !lastTime) {
-                fn.apply(this, arguments);
-                lastTime = nowTime;
-            };
-        }
-};
+
+自行百度代码
 
 8、h5游戏开发规范
 那么h5游戏对应的开发规范大概是什么呢？众所周知，h5游戏制作常规人员配置：游戏策划、美术、程序员、测试，商务经理。对于引流型h5游戏(创意营销)，这就足够了。如果没有游戏策划(创意)同事，就看老板或前端leader怎么安排具体人员分工了。拿我司为例，程序员自行出所有的创意，横竖屏设计稿也自行设计，很多时候图片的选择也是自行百度搜索、然后PS处理。这样很不合理，而且只拿一份工资，太坑爹了～技术上的规范其实没有统一标准，但我个人认为仍然有以下几点需要满足: 第一、横竖屏的适配，不仅是在移动端的横竖屏适配，还要兼容PC端的样式布局和事件响应。几乎所有的创意h5链接都是以竖屏为主或强制横屏，非常不人性化，我个人非常不理解为什么如此多的公司不去适配横屏。当然这会增加技术的实现成本，不是几行代码就能搞定的。第二、h5游戏整体游戏时间最好控制在30S以内，然后把最核心的玩法以最通俗易懂的方式传达给用户。用户大部分可能是小孩，也可能是成年人。不管是哪种群体，落地页最好在30s一到就立马自动弹出，附上醒目的下载按钮。第三、给h5加入适当的BGM。没有BGM的h5就像一部无声电影，在2019，太平淡了。加上合适的音乐，尤其能对上玩法节奏的背景音乐，超级加分，虽然比不上视频剪辑投放的效果，但是个巨大的进步。第四、游戏玩法越简单越好。如何让用户在页面初始化结束后的第一时间不假思索就能get到该h5游戏的玩法，并不需要用户主动去思考该怎么操作，并争取吸引用户超过5S的停留时间，让用户觉得该游戏很好玩，成为了h5游戏的灵魂。具体可以通过醒目的文案提示，呼吸灯、跑马灯、固定...效果可多种多样。也可以实现引导性动画告诉用户。第五、现在仍有不少苹果6以下用户，也就是4英寸机型，甚至是iphone4S。所以适配这方面，既要向上兼容(iphoneX及以上机型)，又要向下降级兼容(iphone4S)，至少保证开发者调试工具中99%机型都是完美的，最后实机验收。综上，这是我根据我司的h5游戏总结出来的几条规范和个人建议，不能保证转化率会有立竿见影的提升，但是参考度较高。
