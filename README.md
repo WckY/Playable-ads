@@ -22,3 +22,5 @@
 **8、h5游戏开发规范**
 
 **9、创建该项目目的**
+
+由于正文过多，就不在readme.md里叙述了，各位请移步到正文.md: https://github.com/WckY/Responsive-h5-game-dictionary/blob/master/%E6%AD%A3%E6%96%87.md
