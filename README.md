@@ -27,41 +27,62 @@
 5、部分王牌h5游戏线上链接
 Popstar
 https://static.zplay.cn/wap/ad_canPlay/popstar/1/plat/popstar_appLovin_en.html（引擎为pixi.js，难点在于无限递归，我leader亲自写的第一版）
+
 https://static.zplay.cn/wap/ad_canPlay/popstar/3-5/plat/popstar_cake_WCKY_adwords_cn.html（引擎为create.js）
+
 https://static.zplay.cn/wap/ad_canPlay/popstar/12/plat/popstar_bubble_WCKY_adwords_cn.html（同上，难点在于气泡的渲染，使用算法实现，以及监听mouseover事件，最后removeEventListener）
+
 https://static.zplay.cn/wap/ad_canPlay/popstar/19/plat/popstar_rotate_WCKY_adwords_cn.html（原生JS实现，创意来自网上，难点在于单次点击和点击以后的判断等）
+
 https://static.zplay.cn/wap/ad_canPlay/popstar/20/plat/popstar_nation_WCKY_adwords_cn.html（同上）
+
 https://static.zplay.cn/wap/ad_canPlay/popstar/4/plat/popstar_adwords_en.html（引擎为create.js）
+
 https://static.zplay.cn/wap/ad_canPlay/popstar/7_9/plat/ps_checkPoint_GBJ_adwords_cn.html（同上）
+
 https://static.zplay.cn/wap/ad_canPlay/popstar/9/plat/ps_sf_9_adwords_en.html（同上）
+
 https://static.zplay.cn/wap/ad_canPlay/popstar/15/plat/ps_sf_15_adwords_cn.html（同上）
+
 https://static.zplay.cn/wap/ad_canPlay/popstar/15-4/plat/ps_sf_15_4_adwords_cn.html（同上）
+
 https://static.zplay.cn/wap/ad_canPlay/popstar/16-2/plat/popstar_axc2_WSH_adwords_cn.html（同上）
 
 猜画小歌2（英文名《Draw it》）
 https://static.zplay.cn/wap/ad_canPlay/drawIt/1/plat/drawIt_1_sf_adwords_cn.html（难点在于如何用create.js绘制画板支持画画，以及不可能真的智能识别）
+
 https://static.zplay.cn/wap/ad_canPlay/drawIt/idiom/plat/drawIt_idiom_WCKY_adwords_cn.html （原生JS和原生canvas结合实现，难点在于自动刮刮卡和关卡的实现，以及事件委托对指定标签的判断。创意来自网上，原版本为jq，我改成了原生JS）
+
 https://static.zplay.cn/wap/ad_canPlay/drawIt/scratch_card/plat/drawIt_scratch_adwords_cn.html（原生JS和原生canvas结合实现，该h5获得项目奖金，单日下载量近2k）
+
 https://static.zplay.cn/wap/ad_canPlay/drawIt/scratch_card_pro/plat/drawIt_scratch_pro_adwords_cn.html（创意来自上海垃圾分类回收）
 
 Idle Grass Cutter（割草休闲游戏）
 https://static.zplay.cn/wap/ad_canPlay/idleGrassCutter/4/plat/idleGrassCutter_cropper_adwords_en.html（引擎为create.js，该h5获得项目奖金，单日下载量近2k，难点在于上下左右的随时切换控制。初始化时使用发布订阅模式随机向下或向右行驶）
+
 https://static.zplay.cn/wap/ad_canPlay/idleGrassCutter/13/plat/idleGrassCutter_shot_ky_adwords_en.html（引擎为create.js，难点在于点击左右两个按钮可以控制、改变盾牌的方向）
+
 https://static.zplay.cn/wap/ad_canPlay/idleGrassCutter/11/plat/idleGrassCutter_battle_cropper_adwords_en.html（引擎为create.js，难点在于自动行驶的小车方向随时随机改变）
+
 https://static.zplay.cn/wap/ad_canPlay/idleGrassCutter/9-1/plat/idleGrassCutter_bomb_adwords_en.html（引擎为create.js，难点飞镖的碰撞检测和改变方向）
 
 Will hero（18年爆款游戏）
 https://static.zplay.cn/wap/ad_canPlay/willhero/6/plat/willhero_adwords_cn.html（原生JS实现，难点在于不同岩浆容器里的岩浆无限循环生成，下降速度、岩浆间隙等参数可配置，以及碰撞检测。最后是发生碰撞后禁止所有的岩浆坠落）
+
 https://static.zplay.cn/wap/ad_canPlay/willhero/4/plat/willhero_adwords_cn.html（原生JS实现，难点在于碰撞检测和动画）
 
 PaperPlanePlanet（纸飞机游戏）
 https://static.zplay.cn/wap/ad_canPlay/paperPlane/10/plat/paperPlane_bomb_adwords_en.html（技术点在于贴图的方式实现伪3D，保证整体文件不超过1M的同时图片质量优秀。难点为运用到三角碰撞检测，因为飞机不是矩形，对碰撞检测的要求更高。为了提高游戏流畅度，使用requestAnimationFrame和window.cancelAnimationFrame）
+
 https://static.zplay.cn/wap/ad_canPlay/paperPlane/8/plat/paperPlane_adwords_en.html（难点在于使用create.js绘制渐变燃油及使用css3实现按钮按下有回弹交互）
+
 https://static.zplay.cn/wap/ad_canPlay/paperPlane/13/plat/paperPlane_hit_adwords_en.html（同事所写，难点在于使用three.min.js和three.OBJLoader.js实现动画的交互及飞跃高度的判断）
+
 https://static.zplay.cn/wap/ad_canPlay/paperPlane/7/plat/paperPlane_game_adwords_en.html（同事所写，难度大家自行领会）
 
 Hexa Drawn（拼图类游戏）
 https://static.zplay.cn/wap/ad_canPlay/hexa/3/plat/hexa_cn_adwords_cn.html（原生JS实现，难度在于for循环里的闭包函数内，无论点击哪个拼图，旋转多少次，多少角度，最终统一的判断条件都会成立，涉及到对角度求余）
+
 https://static.zplay.cn/wap/ad_canPlay/hexa/2/plat/hexa_screen_adwords_cn.html（难度在于每张图片的自动旋转）
 
 更多线上地址，大家可移步至我的github，查看Responsive-h5game-dictionary项目，里面有更为详细的解析。
@@ -150,4 +171,4 @@ window.utils.throttle = function (fn, gapTime) {
 那么h5游戏对应的开发规范大概是什么呢？众所周知，h5游戏制作常规人员配置：游戏策划、美术、程序员、测试，商务经理。对于引流型h5游戏(创意营销)，这就足够了。如果没有游戏策划(创意)同事，就看老板或前端leader怎么安排具体人员分工了。拿我司为例，程序员自行出所有的创意，横竖屏设计稿也自行设计，很多时候图片的选择也是自行百度搜索、然后PS处理。这样很不合理，而且只拿一份工资，太坑爹了～技术上的规范其实没有统一标准，但我个人认为仍然有以下几点需要满足: 第一、横竖屏的适配，不仅是在移动端的横竖屏适配，还要兼容PC端的样式布局和事件响应。几乎所有的创意h5链接都是以竖屏为主或强制横屏，非常不人性化，我个人非常不理解为什么如此多的公司不去适配横屏。当然这会增加技术的实现成本，不是几行代码就能搞定的。第二、h5游戏整体游戏时间最好控制在30S以内，然后把最核心的玩法以最通俗易懂的方式传达给用户。用户大部分可能是小孩，也可能是成年人。不管是哪种群体，落地页最好在30s一到就立马自动弹出，附上醒目的下载按钮。第三、给h5加入适当的BGM。没有BGM的h5就像一部无声电影，在2019，太平淡了。加上合适的音乐，尤其能对上玩法节奏的背景音乐，超级加分，虽然比不上视频剪辑投放的效果，但是个巨大的进步。第四、游戏玩法越简单越好。如何让用户在页面初始化结束后的第一时间不假思索就能get到该h5游戏的玩法，并不需要用户主动去思考该怎么操作，并争取吸引用户超过5S的停留时间，让用户觉得该游戏很好玩，成为了h5游戏的灵魂。具体可以通过醒目的文案提示，呼吸灯、跑马灯、固定...效果可多种多样。也可以实现引导性动画告诉用户。第五、现在仍有不少苹果6以下用户，也就是4英寸机型，甚至是iphone4S。所以适配这方面，既要向上兼容(iphoneX及以上机型)，又要向下降级兼容(iphone4S)，至少保证开发者调试工具中99%机型都是完美的，最后实机验收。综上，这是我根据我司的h5游戏总结出来的几条规范和个人建议，不能保证转化率会有立竿见影的提升，但是参考度较高。
 
 9、创建该项目目的
-我认真想了想，我为什么要创建这个项目呢。感觉一言难尽，而又有苦难言。自己及同事既不是专业的游戏开发，编程方式也不是游戏大神说的OOP，最关键的是在我司前端还被强制性安排上了每个季度下载量10W的KPI，直接影响年终奖，很多时候生无可恋啊。但工作就是这样嘛，人还是要乐观点，尤其是h5游戏上线后，成就感还是有的。所以，创建这个项目，既是为了总结这十个月以来开发的所有游戏，也是向广大的游戏开发同学致敬。你们真是太厉害了，游戏开发是真的好难啊...更想分享给你们，虽然我司h5游戏质感、趣味性等还有待提高，但我觉得作为入门分享，一定能帮助到对h5游戏开发感兴趣的同学。回想我每次没创意，代码不知如何下手、百度谷歌又找不到类似的demo时，真的是想死的心都有...希望你们不要错过它。更希望这个市场在未来成熟起来，不管怎么样，酸辣苦辣，我认了！
+我认真想了想，我为什么要创建这个项目呢。感觉一言难尽，而又有苦难言。自己及同事既不是专业的游戏开发，编程方式也不是游戏大神说的OOP，最关键的是在我司前端还被强制性安排上了每个季度下载量10W的KPI，直接影响年终奖，很多时候生无可恋啊。但工作就是这样嘛，人还是要乐观点，尤其是h5游戏上线后，成就感还是有的。所以，创建这个项目，既是为了总结这十个月以来开发的所有游戏，也是向广大的游戏开发同学致敬。你们真是太厉害了，游戏开发是真的好难啊...更想分享给你们，虽然我司h5游戏质感、趣味性等还有待提高，但我觉得作为入门分享，一定能帮助到对h5游戏开发感兴趣的同学。回想我每次没创意，代码不知如何下手、百度谷歌又找不到类似的demo时，真的是想死的心都有...希望你们不要错过它。更希望这个市场在未来成熟起来。
