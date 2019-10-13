@@ -19,72 +19,79 @@
 大家好，我是来自掌游天下的WckY，自从去年年底从驾考宝典离职来到掌游天下学习、编写响应式h5游戏，不知不觉已经过了十个月了，时间过的真快啊。可能大部分前端工程师处理的都是数据型业务，h5内嵌App、混合开发，用element等做后管理后台，很少听过h5游戏。那么接下来我将为大家全面地介绍h5游戏，什么是h5游戏，如何实现h5游戏，h5游戏从零到一上线需要哪些人员配合等问题，我将一一为大家讲述。友情提示，此篇文章篇幅很长，作为一篇专业介绍h5游戏开发实战的文章，里面首先会介绍、分类我公司目前上线的所有游戏，我会将代码当中涉及到的知识点、技术难点，一一罗列。对h5游戏感兴趣的同学更要有耐心和用心了，因为h5游戏对原生JS的要求很高，游戏引擎和原生canvas的使用其次。当然了，专业的flash开发转h5游戏开发大佬还请高抬贵手勿喷，此篇文章仅作为科普贴和小白分享帖，向更多的前端同学分享一个全新的前端世界。更多精彩内容，各位也可移步我的github地址，我在我的github里建立了一个Responsive-h5game-dictionary项目，项目里有所有线上h5游戏链接和对应的详解，将会介绍的更加详细。好了废话也不多说，我先抛砖引玉一个我司的王牌游戏——Popstar消灭星星(消除类游戏)，已经十周年了，这是我实现的国庆大阅兵主题: https://static.zplay.cn/wap/ad_canPlay/popstar/20/plat/popstar_nation_WCKY_adwords_cn.html。 那么接下来进入正题。
 
 3、简单的自我介绍 + 什么是h5游戏
+
 我在进入掌游天下游戏公司前(我司主要是发行、代理和自主研发游戏)，在驾考宝典从事常规的业务开发一年多。和大家一样，每天都是和服务端、客户端打交道，做运营、产品的移动端需求，做完对外项目，就做对内后台管理项目。从驾考宝典离职后，我也没想过自己会来游戏公司，负责全新的领域。坦白讲，h5游戏对前端来说是个巨大的挑战，而我，即负责h5端游戏。什么是h5游戏？区别于小程序里的游戏——在高度还原App端游戏玩法、主题、操作同时，不断推陈出新其他idea，然后可以在所有浏览里打开正常操作的一个线上链接，包括微信、QQ、钉钉等。说白了，就是引流、创意营销。而我在公司一人身兼至少三个角色，游戏策划、代码的编写、自测。因为公司并没有招对应的游戏策划，也就是我们理解的产品经理这一专业人才。因此每个App游戏、每个新玩法h5上线，都是自己绞尽脑汁想出的idea，而且每周至少要新出一个idea，这是一件十分痛苦的事，没有人会告诉你该怎么做(我公司当然有产品经理，但只负责App端，h5端无)。紧接着是设计稿，从我加入掌游天下至今，是没有设计稿的。响应式h5游戏，需要兼容横竖屏，包括不同的样式布局、和对PC端移动端的事件监听。说到这希望各位朋友不要误会，以为可以随心所欲设计了，前端游戏小组还是有前端老大也就是我leader坐镇的，创意的审核、设计稿的自行设计还是要经过leader同意方可开始，虽然他也是从数据型前端开发转型过来。因此，有一定的设计感、美感是必须的，即使没有，也要在最短时间内培养出来，否则最终导致的后果就是下载量惨不忍睹，转换率过低，大家都很尴尬。总之，对h5感兴趣甚至想尝试这个领域的朋友一定要做好心理准备，h5游戏开发太难了，难的不是写代码，写代码也比处理数据的代码难很多。当没有游戏策划同事时，所有的一切就要靠自己了。就比如大家都爱玩王者荣耀，那如果让各位设计一款30S以内吸引新玩家的王者荣耀h5游戏，该如何下手呢？并成功转化为让商务经理、老板高兴的可观的下载量数据。这就是h5游戏的最大使命！
 
 4、我负责了哪些h5游戏
+
 在介绍具体如何实现h5游戏前，我想先和大家分享下我目前负责了哪些游戏。从数量上计算总共有11款App，每款App里有若干玩法、不同版本的h5，少则2款，多则像我司的王牌游戏——Popstar消灭星星，30+个创意，而且在持续增加。从游戏大种类上区分，分别是消除类游戏《Popstar消灭星星》、竞技绘画游戏《猜画小歌2》(英文名字《Draw It》)、割草休闲游戏《Idle Grass Cutter》、闯关冒险游戏《Will hero》(中文名《王牌大作战》)、纸飞机游戏《PaperPlanePlanet》、电音类游戏《球球你跳一跳》、拼图类游戏《Hexa Drawn》、解压破坏类游戏《Idle Press》、涂鸦休闲游戏《Kolor It》、舞蹈类游戏《madForDance》、球类休闲游戏《我要打篮球》(英文名《Dunk Trickster》)。我也将在之后的篇幅及github中，为大家分享我同事实现的更有趣、更有难度的h5游戏。而之所以先告诉各位游戏的种类，目的就是不想浪费大家的时间，希望能方便你们自行搜索、阅览、尝试、编程。甚至在以后的工作当中如果能借鉴到我今天的分享，我的工作就没白费。那么在大种类里还细分了更多的尝试，比如分屏玩法，程序的自动开始和玩家的手动操作竞技，这样趣味性是不是更足呢，期待大家的反馈。
 
 5、部分王牌h5游戏线上链接
 
 Popstar
-https://static.zplay.cn/wap/ad_canPlay/popstar/1/plat/popstar_appLovin_en.html（引擎为pixi.js，难点在于无限递归，我leader亲自写的第一版）
 
-https://static.zplay.cn/wap/ad_canPlay/popstar/3-5/plat/popstar_cake_WCKY_adwords_cn.html（引擎为create.js）
+https://static.zplay.cn/wap/ad_canPlay/popstar/1/plat/popstar_appLovin_en.html （引擎为pixi.js，难点在于无限递归，我leader亲自写的第一版）
 
-https://static.zplay.cn/wap/ad_canPlay/popstar/12/plat/popstar_bubble_WCKY_adwords_cn.html（同上，难点在于气泡的渲染，使用算法实现，以及监听mouseover事件，最后removeEventListener）
+https://static.zplay.cn/wap/ad_canPlay/popstar/3-5/plat/popstar_cake_WCKY_adwords_cn.html （引擎为create.js）
 
-https://static.zplay.cn/wap/ad_canPlay/popstar/19/plat/popstar_rotate_WCKY_adwords_cn.html（原生JS实现，创意来自网上，难点在于单次点击和点击以后的判断等）
+https://static.zplay.cn/wap/ad_canPlay/popstar/12/plat/popstar_bubble_WCKY_adwords_cn.html （同上，难点在于气泡的渲染，使用算法实现，以及监听mouseover事件，最后removeEventListener）
 
-https://static.zplay.cn/wap/ad_canPlay/popstar/20/plat/popstar_nation_WCKY_adwords_cn.html（同上）
+https://static.zplay.cn/wap/ad_canPlay/popstar/19/plat/popstar_rotate_WCKY_adwords_cn.html （原生JS实现，创意来自网上，难点在于单次点击和点击以后的判断等）
 
-https://static.zplay.cn/wap/ad_canPlay/popstar/4/plat/popstar_adwords_en.html（引擎为create.js）
+https://static.zplay.cn/wap/ad_canPlay/popstar/20/plat/popstar_nation_WCKY_adwords_cn.html （同上）
 
-https://static.zplay.cn/wap/ad_canPlay/popstar/7_9/plat/ps_checkPoint_GBJ_adwords_cn.html（同上）
+https://static.zplay.cn/wap/ad_canPlay/popstar/4/plat/popstar_adwords_en.html （引擎为create.js）
 
-https://static.zplay.cn/wap/ad_canPlay/popstar/9/plat/ps_sf_9_adwords_en.html（同上）
+https://static.zplay.cn/wap/ad_canPlay/popstar/7_9/plat/ps_checkPoint_GBJ_adwords_cn.html （同上）
 
-https://static.zplay.cn/wap/ad_canPlay/popstar/15/plat/ps_sf_15_adwords_cn.html（同上）
+https://static.zplay.cn/wap/ad_canPlay/popstar/9/plat/ps_sf_9_adwords_en.html （同上）
 
-https://static.zplay.cn/wap/ad_canPlay/popstar/15-4/plat/ps_sf_15_4_adwords_cn.html（同上）
+https://static.zplay.cn/wap/ad_canPlay/popstar/15/plat/ps_sf_15_adwords_cn.html （同上）
 
-https://static.zplay.cn/wap/ad_canPlay/popstar/16-2/plat/popstar_axc2_WSH_adwords_cn.html（同上）
+https://static.zplay.cn/wap/ad_canPlay/popstar/15-4/plat/ps_sf_15_4_adwords_cn.html （同上）
+
+https://static.zplay.cn/wap/ad_canPlay/popstar/16-2/plat/popstar_axc2_WSH_adwords_cn.html （同上）
 
 猜画小歌2（英文名《Draw it》）
-https://static.zplay.cn/wap/ad_canPlay/drawIt/1/plat/drawIt_1_sf_adwords_cn.html（难点在于如何用create.js绘制画板支持画画，以及不可能真的智能识别）
+
+https://static.zplay.cn/wap/ad_canPlay/drawIt/1/plat/drawIt_1_sf_adwords_cn.html （难点在于如何用create.js绘制画板支持画画，以及不可能真的智能识别）
 
 https://static.zplay.cn/wap/ad_canPlay/drawIt/idiom/plat/drawIt_idiom_WCKY_adwords_cn.html （原生JS和原生canvas结合实现，难点在于自动刮刮卡和关卡的实现，以及事件委托对指定标签的判断。创意来自网上，原版本为jq，我改成了原生JS）
 
-https://static.zplay.cn/wap/ad_canPlay/drawIt/scratch_card/plat/drawIt_scratch_adwords_cn.html（原生JS和原生canvas结合实现，该h5获得项目奖金，单日下载量近2k）
+https://static.zplay.cn/wap/ad_canPlay/drawIt/scratch_card/plat/drawIt_scratch_adwords_cn.html （原生JS和原生canvas结合实现，该h5获得项目奖金，单日下载量近2k）
 
-https://static.zplay.cn/wap/ad_canPlay/drawIt/scratch_card_pro/plat/drawIt_scratch_pro_adwords_cn.html（创意来自上海垃圾分类回收）
+https://static.zplay.cn/wap/ad_canPlay/drawIt/scratch_card_pro/plat/drawIt_scratch_pro_adwords_cn.html （创意来自上海垃圾分类回收）
 
 Idle Grass Cutter（割草休闲游戏）
-https://static.zplay.cn/wap/ad_canPlay/idleGrassCutter/4/plat/idleGrassCutter_cropper_adwords_en.html（引擎为create.js，该h5获得项目奖金，单日下载量近2k，难点在于上下左右的随时切换控制。初始化时使用发布订阅模式随机向下或向右行驶）
+https://static.zplay.cn/wap/ad_canPlay/idleGrassCutter/4/plat/idleGrassCutter_cropper_adwords_en.html （引擎为create.js，该h5获得项目奖金，单日下载量近2k，难点在于上下左右的随时切换控制。初始化时使用发布订阅模式随机向下或向右行驶）
 
-https://static.zplay.cn/wap/ad_canPlay/idleGrassCutter/13/plat/idleGrassCutter_shot_ky_adwords_en.html（引擎为create.js，难点在于点击左右两个按钮可以控制、改变盾牌的方向）
+https://static.zplay.cn/wap/ad_canPlay/idleGrassCutter/13/plat/idleGrassCutter_shot_ky_adwords_en.html （引擎为create.js，难点在于点击左右两个按钮可以控制、改变盾牌的方向）
 
-https://static.zplay.cn/wap/ad_canPlay/idleGrassCutter/11/plat/idleGrassCutter_battle_cropper_adwords_en.html（引擎为create.js，难点在于自动行驶的小车方向随时随机改变）
+https://static.zplay.cn/wap/ad_canPlay/idleGrassCutter/11/plat/idleGrassCutter_battle_cropper_adwords_en.html （引擎为create.js，难点在于自动行驶的小车方向随时随机改变）
 
-https://static.zplay.cn/wap/ad_canPlay/idleGrassCutter/9-1/plat/idleGrassCutter_bomb_adwords_en.html（引擎为create.js，难点飞镖的碰撞检测和改变方向）
+https://static.zplay.cn/wap/ad_canPlay/idleGrassCutter/9-1/plat/idleGrassCutter_bomb_adwords_en.html （引擎为create.js，难点飞镖的碰撞检测和改变方向）
 
 Will hero（18年爆款游戏）
-https://static.zplay.cn/wap/ad_canPlay/willhero/6/plat/willhero_adwords_cn.html（原生JS实现，难点在于不同岩浆容器里的岩浆无限循环生成，下降速度、岩浆间隙等参数可配置，以及碰撞检测。最后是发生碰撞后禁止所有的岩浆坠落）
 
-https://static.zplay.cn/wap/ad_canPlay/willhero/4/plat/willhero_adwords_cn.html（原生JS实现，难点在于碰撞检测和动画）
+https://static.zplay.cn/wap/ad_canPlay/willhero/6/plat/willhero_adwords_cn.html （原生JS实现，难点在于不同岩浆容器里的岩浆无限循环生成，下降速度、岩浆间隙等参数可配置，以及碰撞检测。最后是发生碰撞后禁止所有的岩浆坠落）
+
+https://static.zplay.cn/wap/ad_canPlay/willhero/4/plat/willhero_adwords_cn.html （原生JS实现，难点在于碰撞检测和动画）
 
 PaperPlanePlanet（纸飞机游戏）
-https://static.zplay.cn/wap/ad_canPlay/paperPlane/10/plat/paperPlane_bomb_adwords_en.html（技术点在于贴图的方式实现伪3D，保证整体文件不超过1M的同时图片质量优秀。难点为运用到三角碰撞检测，因为飞机不是矩形，对碰撞检测的要求更高。为了提高游戏流畅度，使用requestAnimationFrame和window.cancelAnimationFrame）
 
-https://static.zplay.cn/wap/ad_canPlay/paperPlane/8/plat/paperPlane_adwords_en.html（难点在于使用create.js绘制渐变燃油及使用css3实现按钮按下有回弹交互）
+https://static.zplay.cn/wap/ad_canPlay/paperPlane/10/plat/paperPlane_bomb_adwords_en.html （技术点在于贴图的方式实现伪3D，保证整体文件不超过1M的同时图片质量优秀。难点为运用到三角碰撞检测，因为飞机不是矩形，对碰撞检测的要求更高。为了提高游戏流畅度，使用requestAnimationFrame和window.cancelAnimationFrame）
 
-https://static.zplay.cn/wap/ad_canPlay/paperPlane/13/plat/paperPlane_hit_adwords_en.html（同事所写，难点在于使用three.min.js和three.OBJLoader.js实现动画的交互及飞跃高度的判断）
+https://static.zplay.cn/wap/ad_canPlay/paperPlane/8/plat/paperPlane_adwords_en.html （难点在于使用create.js绘制渐变燃油及使用css3实现按钮按下有回弹交互）
 
-https://static.zplay.cn/wap/ad_canPlay/paperPlane/7/plat/paperPlane_game_adwords_en.html（同事所写，难度大家自行领会）
+https://static.zplay.cn/wap/ad_canPlay/paperPlane/13/plat/paperPlane_hit_adwords_en.html （同事所写，难点在于使用three.min.js和three.OBJLoader.js实现动画的交互及飞跃高度的判断）
+
+https://static.zplay.cn/wap/ad_canPlay/paperPlane/7/plat/paperPlane_game_adwords_en.html （同事所写，难度大家自行领会）
 
 Hexa Drawn（拼图类游戏）
-https://static.zplay.cn/wap/ad_canPlay/hexa/3/plat/hexa_cn_adwords_cn.html（原生JS实现，难度在于for循环里的闭包函数内，无论点击哪个拼图，旋转多少次，多少角度，最终统一的判断条件都会成立，涉及到对角度求余）
 
-https://static.zplay.cn/wap/ad_canPlay/hexa/2/plat/hexa_screen_adwords_cn.html（难度在于每张图片的自动旋转）
+https://static.zplay.cn/wap/ad_canPlay/hexa/3/plat/hexa_cn_adwords_cn.html （原生JS实现，难度在于for循环里的闭包函数内，无论点击哪个拼图，旋转多少次，多少角度，最终统一的判断条件都会成立，涉及到对角度求余）
+
+https://static.zplay.cn/wap/ad_canPlay/hexa/2/plat/hexa_screen_adwords_cn.html （难度在于每张图片的自动旋转）
 
 更多线上地址，大家可移步至我的github，查看Responsive-h5game-dictionary项目，里面有更为详细的解析。
 
