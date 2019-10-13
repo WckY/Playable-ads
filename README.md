@@ -3,13 +3,21 @@
 
 目录
 1、看完能学到什么
+
 2、前言
+
 3、简单的自我介绍 + 什么是h5游戏
+
 4、我负责了哪些h5游戏
+
 5、部分王牌h5游戏线上链接
+
 6、知识点简介
+
 7、如何实现h5游戏
+
 8、h5游戏开发规范
+
 9、创建该项目目的
 
 1、看完能学到什么？
@@ -63,6 +71,7 @@ https://static.zplay.cn/wap/ad_canPlay/drawIt/scratch_card/plat/drawIt_scratch_a
 https://static.zplay.cn/wap/ad_canPlay/drawIt/scratch_card_pro/plat/drawIt_scratch_pro_adwords_cn.html （创意来自上海垃圾分类回收）
 
 Idle Grass Cutter（割草休闲游戏）
+
 https://static.zplay.cn/wap/ad_canPlay/idleGrassCutter/4/plat/idleGrassCutter_cropper_adwords_en.html （引擎为create.js，该h5获得项目奖金，单日下载量近2k，难点在于上下左右的随时切换控制。初始化时使用发布订阅模式随机向下或向右行驶）
 
 https://static.zplay.cn/wap/ad_canPlay/idleGrassCutter/13/plat/idleGrassCutter_shot_ky_adwords_en.html （引擎为create.js，难点在于点击左右两个按钮可以控制、改变盾牌的方向）
