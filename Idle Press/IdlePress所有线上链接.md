@@ -1,3 +1,5 @@
+![image](https://github.com/WckY/Responsive-h5-game-dictionary/blob/master/Idle%20Press/icon.jpg)
+
 1、https://static.zplay.cn/wap/ad_canPlay/IdlePress/normal/plat/IdlePress_normal_WSH_adwords_en.html
 
 解析: 实现引擎为create.js，难度在于挤压碰撞及钞票动画的实现。传送带使用css3动画实现。
