@@ -1,7 +1,7 @@
 # Responsive-h5-game-dictionary
 一个超级详细全面介绍响应式h5游戏的项目大全。技术栈为原生JS(es5) + create.js(二次封装) + 原生canvas
 
-**目录**
+# 目录
 
 **1、看完能学到什么**
 
@@ -63,7 +63,7 @@ https://static.zplay.cn/wap/ad_canPlay/popstar/15-4/plat/ps_sf_15_4_adwords_cn.h
 
 https://static.zplay.cn/wap/ad_canPlay/popstar/16-2/plat/popstar_axc2_WSH_adwords_cn.html （同上）
 
-更多Popstar及详细解析，可直接点击: https://github.com/WckY/Responsive-h5-game-dictionary/tree/master/PaperPlanePlanet 。
+**更多Popstar及详细解析，可直接点击**: https://github.com/WckY/Responsive-h5-game-dictionary/tree/master/PaperPlanePlanet 。
 
 
 **猜画小歌2（英文名《Draw it》）**
