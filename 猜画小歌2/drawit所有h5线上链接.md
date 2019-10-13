@@ -1,5 +1,3 @@
-https://img.tapimg.com/market/lcs/8005eb60e4a0a73f4aff153add3f974c_360.png?imageMogr2/auto-orient/strip
-
 1、https://static.zplay.cn/wap/ad_canPlay/drawIt/1/plat/drawIt_1_sf_adwords_cn.html
 
 解析: 难点在于如何用create.js绘制画板支持画画，以及如何识别用户给出的答案是否正确，再进入下一关。具体识别方案为通过代码的随机匹配判断，如果匹配成功进入下一关，失败则停留在当前。不可能真的在未调用任何API情况下智能识别。
