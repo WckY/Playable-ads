@@ -191,6 +191,20 @@ J：原生JS如何实现extend函数？
     
 K：throttle函数的实现？
 
+    window.utils = window.utils || {};
+    window.utils.throttle = function (fn, gapTime) {
+        if (gapTime == null || gapTime == undefined) {
+            gapTime = 1600;
+        };
+        var lastTime = null;
+        return function () {
+            var nowTime = +new Date();
+            if (nowTime - lastTime > gapTime || !lastTime) {
+                fn.apply(this, arguments);
+                lastTime = nowTime;
+            };
+        }
+    };
 
 # 8、h5游戏开发规范
 那么h5游戏对应的开发规范大概是什么呢？众所周知，h5游戏制作常规人员配置：游戏策划、美术、程序员、测试，商务经理。对于引流型h5游戏(创意营销)，这就足够了。如果没有游戏策划(创意)同事，就看老板或前端leader怎么安排具体人员分工了。拿我司为例，程序员自行出所有的创意，横竖屏设计稿也自行设计，很多时候图片的选择也是自行百度搜索、然后PS处理。这样很不合理，而且只拿一份工资，太坑爹了～技术上的规范其实没有统一标准，但我个人认为仍然有以下几点需要满足: 
