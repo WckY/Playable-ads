@@ -1,43 +1,51 @@
 1、https://static.zplay.cn/wap/ad_canPlay/popstar/1/plat/popstar_appLovin_en.html
 
-实现引擎为pixi.js，难点在于无限递归，我leader亲自写的第一版
+解析: 实现引擎为pixi.js，难点在于无限递归，我leader亲自写的第一版。
 
 2、https://static.zplay.cn/wap/ad_canPlay/popstar/3-5/plat/popstar_cake_WCKY_adwords_cn.html
 
-引擎为create.js
+解析: 实现引擎为create.js，难点有以下几点  -->
+
+A: 星星的绘制，是通过二次封装的create.js的API，再通过一个公用函数传形参，最后调用传入不同的实参x、y值渲染出来的，这里面还有个计算公式，var currentPos = {x:x*0.185+0.07, y:y*0.18+0.08}。总之，我这里采取了封装类的写法，分别封装网格、星星。
+
+B: 页面初始化时的引导动画，是通过create.js的动画代码createjs.Tween.get实现，具体如何填充不同的背景色，大家可以想一下。
+
+C: A星自动寻路算法的实现。当所有可连接路径被填充完毕或已没有可填充的路径，A星自动寻路算法会立马将落地页展示出来。
+
+D: 修复走外围的bug的颜色填充。当手指或鼠标按住某个颜色的网格不松手，走整个容器(大网格)之外的路线，落到其他小网格再松手，经过的路径背景颜色不会被填充。
 
 3、https://static.zplay.cn/wap/ad_canPlay/popstar/12/plat/popstar_bubble_WCKY_adwords_cn.html
 
-引擎同上，难点在于气泡的渲染，使用算法实现，以及监听mouseover事件，最后removeEventListener
+解析: 引擎同上，难点在于气泡的渲染，使用算法实现，以及监听mouseover事件，最后removeEventListener。
 
 4、https://static.zplay.cn/wap/ad_canPlay/popstar/19/plat/popstar_rotate_WCKY_adwords_cn.html
 
-原生JS实现，创意来自网上，难点在于单次点击和点击以后的判断等(具体代码也很感谢原作者，原作者写的非常棒)
+解析: 原生JS实现，创意来自网上，难点在于单次点击和点击以后的判断等(具体代码也很感谢原作者，原作者写的非常棒)。
 
 5、https://static.zplay.cn/wap/ad_canPlay/popstar/20/plat/popstar_nation_WCKY_adwords_cn.html
 
-引擎同上
+解析: 引擎同上，难点在于无限递归，以及烟花颜色随机、位置随机的实现。烟花并不是用原生canvas实现，仍然是用create.js实现。
 
 6、https://static.zplay.cn/wap/ad_canPlay/popstar/4/plat/popstar_adwords_en.html
 
-引擎同上
+解析: 引擎同上，难点和第五个素材一样，不过有所升级。烟花是自动无限释放，而第五个是点击星星时才释放。
 
 7、https://static.zplay.cn/wap/ad_canPlay/popstar/7_9/plat/ps_checkPoint_GBJ_adwords_cn.html
 
-引擎同上
+解析: 引擎同上，新的难点在于大量的飞逝流星的渲染，使用了相关算法。黄色、紫色、绿色、红色不断闪烁的星星也是create.js实现。
 
 8、https://static.zplay.cn/wap/ad_canPlay/popstar/9/plat/ps_sf_9_adwords_en.html
 
-引擎同上
+解析: 引擎同上，同事所写。难点在于有新的容器、主舞台，而且是自动的，这款h5属于模拟和线上好友竞技类型，难度很大。
 
 9、https://static.zplay.cn/wap/ad_canPlay/popstar/15/plat/ps_sf_15_adwords_cn.html
 
-引擎同上
+解析: 引擎同上，难度可和第八个素材媲美。
 
 10、https://static.zplay.cn/wap/ad_canPlay/popstar/15-4/plat/ps_sf_15_4_adwords_cn.html
 
-引擎同上
+解析: 引擎同上，新的难度在于如何是用create.js实现3D球标签。
 
 11、https://static.zplay.cn/wap/ad_canPlay/popstar/16-2/plat/popstar_axc2_WSH_adwords_cn.html
 
-引擎同上
+解析: 原生JS实现，难度在于css3六个笑脸星星的旋转动画、斧头的掷入和碰撞检测。碰撞成功斧头是一种状态，失败又是一种交互。
