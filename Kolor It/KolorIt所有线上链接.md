@@ -1,3 +1,5 @@
+![image](https://github.com/WckY/Responsive-h5-game-dictionary/blob/master/Kolor%20It/icon.png)
+
 1、https://static.zplay.cn/wap/ad_canPlay/kolorIt/y1/plat/ki_y1_WCKY_adwords_en.html
 
 解析: 实现引擎为create.js，用户需要不断翻转面板，以此控制小球的行动方向，将面板全部涂满。倒计时进入15s以内将会出现醒目的闹钟提示。
