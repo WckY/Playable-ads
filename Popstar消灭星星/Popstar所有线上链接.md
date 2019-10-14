@@ -75,3 +75,7 @@ D: 修复走外围的bug的颜色填充。当手指或鼠标按住某个颜色�
 17、https://static.zplay.cn/wap/ad_canPlay/popstar/16-2/plat/popstar_axc2_WSH_adwords_cn.html
 
 解析: 原生JS实现，难度在于css3六个笑脸星星的旋转动画、斧头的掷入和碰撞检测。碰撞成功斧头是一种状态，失败又是一种交互。
+
+18、https://github.com/WckY/Responsive-h5-game-dictionary/tree/master/Popstar%E6%B6%88%E7%81%AD%E6%98%9F%E6%98%9F/popstar
+
+解析: 我写了一个本地popstar的demo仅供大家参考，css、js等都在这项目中。有个小知识点是25个不断闪烁的星星(✨)，频率、大小随机，并不是用create.js或canvas实现，而是原生JS。
