@@ -1,4 +1,5 @@
 ![image](https://github.com/WckY/Responsive-h5-game-dictionary/blob/master/Hexa%20Drawn/icon.png)
+![image](https://github.com/WckY/Responsive-h5-game-dictionary/blob/master/Hexa%20Drawn/hexa.png)
 
 1、https://static.zplay.cn/wap/ad_canPlay/hexa/1/plat/hexa_normal_adwords_cn.html
 
