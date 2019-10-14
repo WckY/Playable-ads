@@ -7,3 +7,5 @@
 2、https://static.zplay.cn/wap/ad_canPlay/kolorIt/y2/plat/ki_y2_WCKY_adwords_en.html
 
 解析: 同上，更换了横竖屏时的背景图片，希望给用户耳目一新的感觉。
+
+![image](https://github.com/WckY/Responsive-h5-game-dictionary/blob/master/Kolor%20It/kolorit.png)
