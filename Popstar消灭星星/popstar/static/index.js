@@ -116,7 +116,6 @@
 			app.percent.innerHTML = 15;
 			if(app.count.innerHTML >=5){
 				map.ad_end();
-				// app.end.style.display = "block";
 			};
 		},
 		refresh : function(){}
@@ -183,7 +182,6 @@
 		map.ad_resize();
 		if(app.initFlag){
 			Crt.init({
-				// bgColor : "#f00",
 				type : "vertical",
 				id : "canvas",
 				rate : 1.2,
