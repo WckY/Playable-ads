@@ -1,5 +1,3 @@
-# 我的个人地址: [掘金](https://juejin.im/user/58ba32a9ac502e006bed7ddc)和[segmentfault](https://segmentfault.com/u/wcky/articles)
-
 # Responsive-h5-game-dictionary
 一个超级详细全面介绍响应式h5游戏的项目大全。技术栈为原生JS(es5) + create.js(二次封装) + 原生canvas
 
@@ -27,9 +25,11 @@
 
 由于正文过多，就不在readme.md里叙述了，各位请移步到正文.md: https://github.com/WckY/Responsive-h5-game-dictionary/blob/master/%E6%AD%A3%E6%96%87.md 。
 
-**另外正如大家所见，除了readme.md和正文.md，有若干个游戏文件夹，里面存放着每个游戏的所有h5线上链接和详解，如果不想看正文.md可直接跳过。**
+**另外正如大家所见，除了readme.md和正文.md，有若干个游戏文件夹，里面存放着每个游戏的所有h5线上链接和详解。推荐阅读姿势，先看完正文.md https://github.com/WckY/Responsive-h5-game-dictionary/blob/master/%E6%AD%A3%E6%96%87.md** ，再查看不同h5游戏线上链接。
 
 # 最后
+
+**我的个人地址: [掘金](https://juejin.im/user/58ba32a9ac502e006bed7ddc)和[segmentfault](https://segmentfault.com/u/wcky/articles)**
 
 喜欢的希望大家点个 star,鼓励一下，谢谢哈！！！
 
