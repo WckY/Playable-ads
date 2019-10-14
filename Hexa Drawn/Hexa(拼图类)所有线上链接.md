@@ -6,7 +6,7 @@
 
 2、https://static.zplay.cn/wap/ad_canPlay/hexa/2/plat/hexa_screen_adwords_cn.html
 
-解析: 难度在于每张图片的自动旋转，这是典型的分屏、竞技模式玩法————人机大战。同时，在整个版本中，改变了布局设计，尤其是横屏时，效果明显。
+解析: 难度在于每张图片的自动旋转，这是典型的分屏、竞技模式玩法————人机大战。同时，在整个版本中，改变了布局设计，尤其是横屏时，效果鲜明。
 
 3、https://static.zplay.cn/wap/ad_canPlay/hexa/3/plat/hexa_cn_adwords_cn.html
 
