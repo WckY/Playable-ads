@@ -117,8 +117,7 @@
 			if(app.count.innerHTML >=5){
 				map.ad_end();
 			};
-		},
-		refresh : function(){}
+		}
 	};
 	//屏幕旋转函数（必填）
 	map.ad_resize = function(flag){
@@ -176,7 +175,6 @@
 			app.canvas = document.getElementById("canvas");
 			app.header = document.querySelector('.header');
 			app.footer = document.querySelector('.footer');
-			app.refresh = document.querySelector('.refresh');
 			app.time = document.querySelector('.time');
 		};
 		map.ad_resize();
