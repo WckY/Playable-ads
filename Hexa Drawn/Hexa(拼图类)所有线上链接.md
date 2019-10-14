@@ -2,7 +2,7 @@
 
 1、https://static.zplay.cn/wap/ad_canPlay/hexa/1/plat/hexa_normal_adwords_cn.html
 
-解析: 原生JS实现，难度在于for循环里的闭包函数内，无论点击哪个拼图，旋转多少次，多少角度，最终统一的判断条件都会成立，涉及到对角度求余。
+解析: 原生JS实现，难度首先在于如何判断七张图片不断旋转，最终拼接成一张完成的图片，如何获取到这个“完整”的状态。第二、点击每张图片旋转的角度都不一样，而且每张图片都能不断点击、旋转、角度也会不断增加，如何写一个函数去判断，然后不断调用。技术方案里涉及到for循环、闭包函数、对角度求余。
 
 2、https://static.zplay.cn/wap/ad_canPlay/hexa/2/plat/hexa_screen_adwords_cn.html
 
