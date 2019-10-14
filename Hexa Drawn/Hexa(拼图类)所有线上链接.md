@@ -1,5 +1,4 @@
 ![image](https://github.com/WckY/Responsive-h5-game-dictionary/blob/master/Hexa%20Drawn/icon.png)
-![image](https://github.com/WckY/Responsive-h5-game-dictionary/blob/master/Hexa%20Drawn/hexa.png)
 
 1、https://static.zplay.cn/wap/ad_canPlay/hexa/1/plat/hexa_normal_adwords_cn.html
 
@@ -12,5 +11,7 @@
 3、https://static.zplay.cn/wap/ad_canPlay/hexa/3/plat/hexa_cn_adwords_cn.html
 
 解析: 在第一个素材基础上，尝试使用中国风风格，自行找的故宫图片，然后请美术同学进行油漆模糊处理。
+
+![image](https://github.com/WckY/Responsive-h5-game-dictionary/blob/master/Hexa%20Drawn/hexa.png)
 
 
