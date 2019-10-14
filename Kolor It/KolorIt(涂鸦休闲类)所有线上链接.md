@@ -1,4 +1,4 @@
-                     ![image](https://github.com/WckY/Responsive-h5-game-dictionary/blob/master/Kolor%20It/icon.png)
+![image](https://github.com/WckY/Responsive-h5-game-dictionary/blob/master/Kolor%20It/icon.png)
 
 1、https://static.zplay.cn/wap/ad_canPlay/kolorIt/y1/plat/ki_y1_WCKY_adwords_en.html
 
