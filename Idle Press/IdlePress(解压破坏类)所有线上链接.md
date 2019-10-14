@@ -10,4 +10,4 @@
 
 3、https://static.zplay.cn/wap/ad_canPlay/IdlePress/pro/plat/IdlePress_pro_adwords_en.html
 
-解析: 实现引擎为create.js，部分皮肤已换，和整体的应用场景更搭配。加上了动感的BGM，被压碎物品用更近实物，让用户尽情释放压力。
+解析: 实现引擎为create.js，部分样式、皮肤已换，和整体的应用场景更搭配。加上了动感的BGM，被压碎物品更接近实物，让用户尽情释放压力。
