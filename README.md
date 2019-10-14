@@ -27,15 +27,15 @@
 
 - 所有h5游戏,要么是用原生JS实现，要么是二次封装的create.js实现，也有原生canvas的精彩表现，或是两者、三者技术的结合，不存在类似jq等第三方库。
 
-- 不仅实现了移动端的适配，还实现了横竖屏的适配，也就是移动端和PC端的双重适配，打破了h5游戏默认竖屏横屏却无兼容的尴尬模式。
+- **不仅实现了移动端的适配，还实现了横竖屏的适配**，也就是移动端和PC端的双重适配，打破了h5游戏默认竖屏横屏却无兼容的尴尬模式。
 
-- 将我司的移动端适配和create.js进行了深度结合、二次封装，创建了公共create.base.js，成功封装了自己的UI框架。
+- **成功封装了自己的UI框架**。将我司的移动端适配和create.js进行了深度结合、二次封装，创建了公共create.base.js。
 
 - 兼容了在弱网条件下，可能出现的白屏问题。
 
-- 使用原生JS封装了公共工具类——base.js，包括addClass、removeClass、hasClass等方法。
+- **使用原生JS封装了公共工具类——base.js**，包括addClass、removeClass、hasClass等方法。
 
-- 成功监听到当手机静音键开启时，h5游戏的BGM也对应的pause。更多的亮点，我会在开发规范中阐述。
+- **成功监听到当手机静音键开启时，h5游戏的BGM也对应的pause**。更多的亮点，我会在开发规范中阐述。
 
 由于正文过多，就不在readme.md里叙述了，各位请移步到正文.md: https://github.com/WckY/Responsive-h5-game-dictionary/blob/master/%E6%AD%A3%E6%96%87.md 。
 
