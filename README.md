@@ -27,7 +27,7 @@
 
 - **技术栈为原生JS(es5) + create.js(二次封装) + 原生canvas，体量小代码精简，提升了游戏页面加载速度**。所有h5游戏，要么是用原生JS实现，要么是二次封装的create.js实现，也有原生canvas的精彩表现，或是两者、三者技术的结合，不存在类似jq等第三方库。
 
-- **[h5游戏前端性能优化大全](https://github.com/WckY/Responsive-h5-game-dictionary/blob/master/h5%E6%B8%B8%E6%88%8F(%E5%89%8D%E7%AB%AF)%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96%E5%A4%A7%E5%85%A8.md) ，将会告诉你h5游戏具体如何提升性能。
+- **[h5游戏前端性能优化大全](https://github.com/WckY/Responsive-h5-game-dictionary/blob/master/h5%E6%B8%B8%E6%88%8F(%E5%89%8D%E7%AB%AF)%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96%E5%A4%A7%E5%85%A8.md) ，将会告诉你h5游戏具体如何提升性能。**
 
 - **成功封装了自己的UI框架**。将我司的移动端适配和create.js进行了深度结合、二次封装，不仅创建了公共create.base.js，还封装了公共UI框架。
 
