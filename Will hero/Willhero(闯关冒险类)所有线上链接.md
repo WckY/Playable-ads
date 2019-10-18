@@ -7,3 +7,5 @@
 2、https://static.zplay.cn/wap/ad_canPlay/willhero/4/plat/willhero_adwords_cn.html
 
 解析: 原生JS实现，难点在于碰撞检测和动画。
+
+![image](https://github.com/WckY/Responsive-h5-game-dictionary/blob/master/Will%20hero/willhero.png)
