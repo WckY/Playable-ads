@@ -47,7 +47,7 @@
 
 # 最后
 
-**我的个人地址: [segmentfault](https://segmentfault.com/u/wcky/articles)和[掘金](https://juejin.im/user/58ba32a9ac502e006bed7ddc)**
+**我的个人地址: [segmentfault](https://segmentfault.com/u/wcky/articles)**
 
 喜欢的希望大家点个 star,鼓励一下，谢谢哈！！！
 
