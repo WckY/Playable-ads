@@ -15,3 +15,5 @@
 4、https://static.zplay.cn/wap/ad_canPlay/drawIt/scratch_card_pro/plat/drawIt_scratch_pro_adwords_cn.html
 
 解析: 创意来自上海垃圾分类回收，图标等全是我自行百度再PS。
+
+![image](https://github.com/WckY/Responsive-h5-game-dictionary/blob/master/%E7%8C%9C%E7%94%BB%E5%B0%8F%E6%AD%8C2/drawIt2.png)
