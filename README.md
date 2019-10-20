@@ -47,7 +47,7 @@
 
 # 最后
 
-[点击此处更直接跳转Popstar的demo](https://github.com/WckY/Responsive-h5-game-dictionary/tree/master/Popstar%E6%B6%88%E7%81%AD%E6%98%9F%E6%98%9F/popstar)
+[点击此处可直接跳转Popstar的demo](https://github.com/WckY/Responsive-h5-game-dictionary/tree/master/Popstar%E6%B6%88%E7%81%AD%E6%98%9F%E6%98%9F/popstar)
 
 我写了一个本地Popstar的demo供大家参考，css、js等都在这项目中。有个小知识点是25个不断闪烁的星星(✨)，频率、大小随机，并不是用create.js或canvas实现，而是原生JS。
 
