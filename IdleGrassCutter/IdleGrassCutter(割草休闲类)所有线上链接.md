@@ -8,12 +8,4 @@
 
 解析: 引擎为create.js，难点在于点击左右两个按钮可以控制、改变盾牌的方向
 
-3、https://static.zplay.cn/wap/ad_canPlay/idleGrassCutter/11/plat/idleGrassCutter_battle_cropper_adwords_en.html
-
-解析: 引擎为create.js，难点在于自动行驶的小车方向随时随机改变
-
-4、https://static.zplay.cn/wap/ad_canPlay/idleGrassCutter/9-1/plat/idleGrassCutter_bomb_adwords_en.html
-
-解析: 引擎为create.js，难点飞镖的碰撞检测和改变方向
-
 ![image](https://github.com/WckY/Responsive-h5-game-dictionary/blob/master/IdleGrassCutter/idlegrasscutter.png)
