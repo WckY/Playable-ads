@@ -51,6 +51,4 @@
 
 喜欢的希望大家点个 star,鼓励一下，谢谢哈！！！
 
-微信号: WckY0805。
-
 ![image](https://github.com/WckY/Responsive-h5-game-dictionary/blob/master/Popstar%E6%B6%88%E7%81%AD%E6%98%9F%E6%98%9F/popstar.png)
