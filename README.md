@@ -52,3 +52,7 @@
 喜欢的希望大家点个 star,鼓励一下，谢谢哈！！！
 
 ![image](https://github.com/WckY/Responsive-h5-game-dictionary/blob/master/Popstar%E6%B6%88%E7%81%AD%E6%98%9F%E6%98%9F/popstar.png)
+
+**以下为我工作至今负责、接触过的休闲手游：**
+
+球你跳一跳——电音类、Idle Press——解压破坏类、AXE Champ——斧头帮、Popstar2（消灭星星2）——消除类、IdleGrassCutter——割草休闲、drawIt（猜画小歌2）——竞技绘画、WillHero（王牌大作战）——闯关冒险、PaperPlanePlanet——纸飞机、Hexa Drawn——拼图类、Kolor It——涂鸦休闲类、madForDance——舞蹈类、我要打篮球、lucky win——博彩类、Happy Scratch——博彩类、Cheery Ruby——博彩类、Golden Garden——博彩类、lucky cat——博彩类、word jump——连单词类、word juice——连单词类、Townest——三消消除类、Mergical——合成类、word buddies——连单词类等
