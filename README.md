@@ -1,4 +1,4 @@
-# Responsive-h5-game-dictionary
+# Responsive-H5-Playable-ads-dictionary
 一个超级详细全面介绍响应式H5试玩广告的项目大全。技术栈为原生JS(es5) + Create.js(二次封装) + 原生Canvas
 
 # 目录
